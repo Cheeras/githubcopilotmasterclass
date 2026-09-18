@@ -8,7 +8,10 @@ This repository contains materials, notes, and custom agent configurations from 
 - **`.github/AGENTS.md`** — Agent instructions file with workspace conventions, structure, and key information for AI coding agents.
 - **`.github/agents/`** — Custom VS Code agent definitions (e.g., `reverse-string.agent.md`).
 - **`.github/skills/`** — Custom skill definitions (folder-based SKILL.md format).
-- **`Notes/`** — Class notes, reference guides, and documentation (Caveman user guide, Eraser.io exports).
+- **`.github/Sourcecode/`** — Python example programs (Hello World, find largest of two numbers).
+- **`Notes/`** — Class notes, reference guides, and documentation:
+  - `caveman-UserGuide.md` — Comprehensive guide for the Caveman Skill Suite (token optimization).
+  - `agentsmdvsCopilotinstruction.md` — Detailed comparison between AGENTS.md and copilot-instructions.md.
 
 ## 🚀 Topics Covered
 
