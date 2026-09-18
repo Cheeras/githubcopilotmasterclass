@@ -1,10 +1,16 @@
 ---
 name: reverse-string
-description: A custom agent that reverses any given string input and returns the reversed result. Use this agent when the user asks to reverse a word, name, or any text string.
-argument-hint: A string to reverse, e.g., "hello" or "Shankar"
+description: 'Reverse any given string input. Use when the user asks to reverse a word, name, sentence, or any text string — e.g., "reverse hello", "reverse Shankar", "reverse this string".'
+argument-hint: 'A string to reverse, e.g., "hello" or "Shankar"'
 user-invocable: true
-# tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo'] # specify the tools this agent can use. If not set, all enabled tools are allowed.
 ---
+
+# Reverse String Skill
+
+## When to Use
+- User asks to reverse a word, name, or text string
+- User says "reverse this string", "reverse &lt;text&gt;", or "turn &lt;text&gt; around"
+- User provides a string and expects the reversed version as output
 
 ## Core Behavior
 - Accepts a single string input from the user.
@@ -16,13 +22,17 @@ user-invocable: true
 - Preserves the original casing — only the order of characters changes.
 - Spaces, punctuation, and special characters are treated as regular characters and reversed along with letters.
 
-## Approach
+## Procedure
 1. Receive the input string from the user.
 2. Convert the input to a string if it isn't already.
 3. Reverse the string by iterating from the last character to the first.
 4. Return the reversed string as the final output.
 
 ## Examples
-- **Input:** `"hello"` → **Output:** `"olleh"`
-- **Input:** `"Shankar"` → **Output:** `"raknahS"`
-- **Input:** `"12345"` → **Output:** `"54321"`
+| Input | Output |
+|-------|--------|
+| `"hello"` | `"olleh"` |
+| `"Shankar"` | `"raknahS"` |
+| `"12345"` | `"54321"` |
+| `"Jeyadev"` | `"vedayeJ"` |
+| `"Hello World"` | `"dlroW olleH"` |

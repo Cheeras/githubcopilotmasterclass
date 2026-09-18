@@ -5,7 +5,10 @@ This repository contains materials, notes, and custom agent configurations from 
 ## 📚 Contents
 
 - **ClassNotes.md** — Comprehensive class notes covering GitHub Copilot concepts, installation, commands, skills, STLC, MCP servers, and AI agents.
+- **`.github/AGENTS.md`** — Agent instructions file with workspace conventions, structure, and key information for AI coding agents.
 - **`.github/agents/`** — Custom VS Code agent definitions (e.g., `reverse-string.agent.md`).
+- **`.github/skills/`** — Custom skill definitions (folder-based SKILL.md format).
+- **`Notes/`** — Class notes, reference guides, and documentation (Caveman user guide, Eraser.io exports).
 
 ## 🚀 Topics Covered
 
