@@ -1,4 +1,3 @@
-
 GitHub Copilot for QA | The Testing Academy Masterclass
 
 * Overview

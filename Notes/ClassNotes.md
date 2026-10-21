@@ -90,13 +90,13 @@ Donot give power of thinging to LLM, if you don't understand what you are doing
 
 LLM - Brain
 
-AI Agent - Brain + Tool + Memory
+AI Agent - LLM + instructions + tools (and, when configured, context or memory)
 
 An automouse system that perceices,reason,decides and act towards a goal
 
-Skill - Memory (no memory) it can access tools
+A skill is a packaged set of instructions, knowledge, or procedures (for example, a `SKILL.md` file with steps and possibly scripts). A skill is not itself an AI agent or a guarantee of persistent memory; an agent can use a skill when the task calls for it.
 
-A skill is Packaged set of instructions, Knowledge, or procedure (ex: skill.md  file with steps + Scripts)
+**In short:** A prompt asks, a skill guides, and an AI agent acts.
 
 different commands in GHCP:
 
@@ -136,5 +136,21 @@ which directory contains what
 
 All the necessary information which is important for the AI coding agent co-polit run the project, to execute the project to test the project or for documentation
 
-
 /init - what exectly init command do
+
+=================================
+
+LLM is nothing but prediction engine like brain
+
+Context - what is the back ground , information	
+
+## Prompt vs Skill vs AI Agent
+
+| Aspect                     | Prompt                                                                    | Skill                                                                         | AI Agent                                                                               |
+| -------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **What it is**       | An instruction or request sent to an AI for a particular response or task | Reusable, focused instructions and workflow for a type of task                | An AI system configured to pursue a goal by reasoning and, when available, using tools |
+| **Purpose**          | Tell the AI what to do now                                                | Teach the AI a repeatable way to do a task                                    | Carry out a task, potentially across multiple steps and tool calls                     |
+| **Typical contents** | Task, context, constraints, and desired output                            | Instructions, domain knowledge, examples, and sometimes scripts or references | Agent instructions, available tools, context, and sometimes skills or memory           |
+| **How it is used**   | Written or sent when making a request                                     | Reused when relevant; may be loaded or invoked by an agent                    | Interacts with the user and/or environment, deciding what steps and tools are needed   |
+| **Example**          | “Summarize these test results in a table.”                              | A reusable procedure for analyzing test results and reporting defects         | An agent that reads test results, runs checks, and prepares a defect report            |
+| **Key distinction**  | A request                                                                 | A reusable capability or procedure                                            | The task-performing system                                                             |
